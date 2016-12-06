@@ -25,7 +25,14 @@ A scaffold for automated wordpress tests.
 
   If you're using a remote installation (i.e. a virtual machine like Pressmatic + Docker) - this should be done on the virtual server. A quick guide on how to install phpunit on ubuntu can be found [here](https://github.com/sebastianbergmann/phpunit#installation).
 
-4. Run the testsuite
+4. From the `tests` directory, run: 
+
+  `bash install-wp-tests.sh wordpress_test root '' localhost latest`
+  ...to get a new test wordpress test install.
+  
+  Replace “root” with the username of your database and replace ” with the database password. Also replace “localhost” with the hostname of your database. You can find all three of these values in your wp-config.php file.
+
+5. Run the testsuite
 
   - from your /tests directory run the tests with `phpunit`. 
 
