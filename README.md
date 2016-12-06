@@ -1,9 +1,8 @@
 # automated-tests
 A scaffold for automated wordpress tests.
 
-How to
+# Php
 
-Php
 1. Clone this (scaffold) repo to `app/src/wp-content/plugins/myplugin/tests`.
 
 ```
