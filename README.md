@@ -3,14 +3,14 @@ A scaffold for automated wordpress tests.
 
 # Php
 
-1 Clone this (scaffold) repo to `app/src/wp-content/plugins/myplugin/tests`.
+1.Clone this (scaffold) repo to `app/src/wp-content/plugins/myplugin/tests`.
 
 ```
 cd app/src/wp-content/plugins/myplugin/
 git clone git@github.com:pixelgrade/automated-tests.git tests
 ```
 
-2 Configure our test environment:
+2.Configure our test environment:
 
 - in apache.ci.conf, replace plugin_name and ServerName:
 
@@ -21,11 +21,11 @@ git clone git@github.com:pixelgrade/automated-tests.git tests
   
 - in bootstrap.php, on line 7 replace the $plugin_file variable with your plugin's main .php file's name.
 
-3 Install phpunit. 
+3.Install phpunit. 
 
 If you're using a remote installation (i.e. a virtual machine like Pressmatic + Docker) - this should be done on the virtual server. A quick guide on how to install phpunit on ubuntu can be found [here](https://github.com/sebastianbergmann/phpunit#installation).
 
-4 Run the testsuite
+4.Run the testsuite
 
 - from your /tests directory run the tests with `phpunit`. 
 
